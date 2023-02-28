@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>inheritance_one.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+inheritance_one.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">lop_doituong</span><span class="s0">;</span>
+
+<span class="s0">abstract class </span><span class="s1">inheritance_one {</span>
+    <span class="s0">public </span><span class="s1">String fulname = </span><span class="s2">&quot;HOÀNG QUỐC TRUNG&quot;</span><span class="s0">;</span>
+    <span class="s0">public </span><span class="s1">String Email = </span><span class="s2">&quot;hoangtrung.com&quot;</span><span class="s0">;</span>
+    <span class="s0">public float </span><span class="s1">height = </span><span class="s3">1.74f</span><span class="s0">;</span>
+    <span class="s0">public int </span><span class="s1">age = </span><span class="s3">20 </span><span class="s0">;</span>
+    <span class="s0">public abstract void </span><span class="s1">year()</span><span class="s0">;</span>
+<span class="s1">}</span>
+   <span class="s0">class </span><span class="s1">inheritance_tow </span><span class="s0">extends </span><span class="s1">inheritance_one {</span>
+    <span class="s0">public int </span><span class="s1">newyear = </span><span class="s3">2023</span><span class="s0">;</span>
+
+       <span class="s1">@Override</span>
+       <span class="s0">public void </span><span class="s1">year() {</span>
+           <span class="s1">System.out.println(</span><span class="s2">&quot;studing all  day long &quot;</span><span class="s1">)</span><span class="s0">;</span>
+       <span class="s1">}</span>
+   <span class="s1">}</span>
+</pre>
+</body>
+</html>
