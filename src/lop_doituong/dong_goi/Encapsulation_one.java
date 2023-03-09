@@ -1,16 +1,34 @@
 package lop_doituong.dong_goi;
 
 public class Encapsulation_one {
-private String fullname;
-private String Email;
-private int age ;
-private float height;
+  private  String fullname ;
+  private  String name;
+  private  String email;
+  private  int   age;
+  private float height;
 
-    public String getFullname() {
-        return fullname;
+    public String getName() {
+        return name;
     }
-    public void setFullname(String fname){
-        this.fullname=fname;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public float getHeight() {
+        return height;
+    }
+
+    public void setHeight(float height) {
+        this.height = height;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public int getAge() {
@@ -21,20 +39,12 @@ private float height;
         this.age = age;
     }
 
-    public String getEmail() {
-        return Email;
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
     }
 
-    public void setEmail(String email) {
-        Email = email;
-    }
-
-    public float getHeight() {
-        return height;
-    }
-
-    public void setHeight(float height) {
-        this.height = height;
+    public String getFullname() {
+        return fullname;
     }
 }
 

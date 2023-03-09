@@ -1,38 +1,35 @@
 package lop_doituong.Polymorphism;
 
-class Polymorphism {
- public void animal (){
-     System.out.println("Here are some animal calls :");
- }
-}
-class Dog extends Polymorphism {
-    @Override
-    public void animal() {
-        System.out.println("the Dog says : go go go go go" );
-    }
-}
-class Pig extends Polymorphism{
-    @Override
-    public void animal() {
-        System.out.println("the pig says : we we we we ");
-    }
-}
-class cat extends Polymorphism{
-    @Override
-    public void animal() {
-        System.out.println("the cat says :  meo meo meo" );
-    }
-}
-class animal{
-    public static void main(String[] args) {
-        Polymorphism myanimal = new Polymorphism();
-        Polymorphism myDog = new Dog();
-        Polymorphism myPig = new Pig();
-        Polymorphism mycat = new cat();
-        myanimal.animal();
-        myDog.animal();
-        myPig.animal();
-        mycat.animal();
-    }
 
+class animals{
+    public void animalSound(){
+        System.out.println("The animal makes a sound");
+    }
+}
+class Dog extends animals{
+    public void animalSound(){
+        System.out.println("the dog says : gogogogo  ");
+    }
+}
+class Cat extends animals{
+    public void animalSound(){
+        System.out.println("the cat says : meo meo meo meo");
+    }
+}
+class Pig extends animals{
+    public void animalSound(){
+        System.out.println("the pig says : we we we we");
+    }
+}
+class  animalss{
+    public static void main(String[] args) {
+        animals myanimals = new animals();
+        animals myDog = new Dog();
+        animals myCat = new Cat();
+        animals myPig = new Pig();
+        myanimals.animalSound();
+        myDog.animalSound();
+        myCat.animalSound();
+        myPig.animalSound();
+    }
 }
